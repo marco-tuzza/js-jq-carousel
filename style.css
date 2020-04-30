@@ -39,6 +39,33 @@ body {
     color: #C0A471;
 }
 
+.fas:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.slider {
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .slider img {
     border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.left, .right {
+    width: 10%
+    display: flex;
+    justify-content: space-around;
+}
+
+img.active {
+    display: block;
 }
