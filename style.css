@@ -37,6 +37,7 @@ body {
 .left i, .right i {
     font-size: 50px;
     color: #C0A471;
+    text-shadow: 2px 2px black;
 }
 
 .left i:hover, .right i:hover {
@@ -59,6 +60,7 @@ body {
     height: 460px;
     width: 100%;
     display: none;
+    border: 2px solid #C0A471;
 }
 
 .left, .right {
@@ -81,6 +83,7 @@ img.active {
 .slider-nav i {
     color: #C0A471;
     font-size: 20px;
+    text-shadow: 1px 1px black;
 }
 
 .slider-nav i:hover {
