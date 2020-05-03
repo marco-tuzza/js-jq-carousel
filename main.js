@@ -51,3 +51,71 @@ $(".fa-chevron-circle-left").click(
 
     }
 )
+
+$(".slider-nav > i:first-child").click(
+    function() {
+
+        var visibleImage = $(".active")
+        var firstImage = $("img:first-child")
+        var activeCircle = $(".slider-nav > .fas")
+        var firstCircle = $(".slider-nav > i:first-child")
+
+        visibleImage.removeClass("active")
+        firstImage.addClass("active")
+        activeCircle.removeClass("fas")
+        activeCircle.addClass("far")
+        firstCircle.removeClass("far")
+        firstCircle.addClass("fas")
+    }
+)
+
+$(".far:nth-child(2)").click(
+    function() {
+
+        var visibleImage = $(".active")
+        var secondImage = $("img:nth-child(2)")
+        var activeCircle = $(".slider-nav > .fas")
+        var secondCircle = $(".slider-nav > i:nth-child(2)")
+
+        visibleImage.removeClass("active")
+        secondImage.addClass("active")
+        activeCircle.removeClass("fas")
+        activeCircle.addClass("far")
+        secondCircle.removeClass("far")
+        secondCircle.addClass("fas")
+    }
+)
+
+$(".far:nth-child(3)").click(
+    function() {
+
+        var visibleImage = $(".active")
+        var thirdImage = $("img:nth-child(3)")
+        var activeCircle = $(".slider-nav > .fas")
+        var thirdCircle = $(".slider-nav > i:nth-child(3)")
+
+        visibleImage.removeClass("active")
+        thirdImage.addClass("active")
+        activeCircle.removeClass("fas")
+        activeCircle.addClass("far")
+        thirdCircle.removeClass("far")
+        thirdCircle.addClass("fas")
+    }
+)
+
+$(".far:nth-child(4)").click(
+    function() {
+
+        var visibleImage = $(".active")
+        var fourthImage = $("img:nth-child(4)")
+        var activeCircle = $(".slider-nav > .fas")
+        var fourthCircle = $(".slider-nav > i:nth-child(4)")
+
+        visibleImage.removeClass("active")
+        fourthImage.addClass("active")
+        activeCircle.removeClass("fas")
+        activeCircle.addClass("far")
+        fourthCircle.removeClass("far")
+        fourthCircle.addClass("fas")
+    }
+)
