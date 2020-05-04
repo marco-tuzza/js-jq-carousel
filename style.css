@@ -34,13 +34,13 @@ body {
     align-items: center;
 }
 
-.left i, .right i {
+.left i, .right i, .autoplay i {
     font-size: 50px;
     color: #C0A471;
     text-shadow: 2px 2px black;
 }
 
-.left i:hover, .right i:hover {
+.left i:hover, .right i:hover, .autoplay i:hover {
     color: white;
     cursor: pointer;
 }
@@ -69,7 +69,7 @@ body {
     justify-content: space-around;
 }
 
-img.active {
+img.active, .autoplay i.active-icon {
     display: block;
 }
 
@@ -89,4 +89,8 @@ img.active {
 .slider-nav i:hover {
     color: white;
     cursor: pointer;
+}
+
+.autoplay i {
+    display: none;
 }

@@ -119,3 +119,35 @@ $(".far:nth-child(4)").click(
         fourthCircle.addClass("fas")
     }
 )
+
+$(".autoplay > i").click(
+    function() {
+
+        $(".autoplay > i").toggleClass("active-icon")
+
+        var visibleImage = $(".active")
+        var nextImage = visibleImage.next("img")
+        var activeCircle = $(".slider-nav > .fas")
+        var nextCircle = activeCircle.next()
+
+        setInterval(function(){
+
+            if (nextImage.length) {
+                visibleImage.removeClass("active")
+                nextImage.addClass("active")
+                activeCircle.removeClass("fas")
+                activeCircle.addClass ("far")
+                nextCircle.removeClass ("far")
+                nextCircle.addClass ("fas")
+            } else {
+                visibleImage.removeClass("active")
+                $("img:first-child").addClass("active")
+                activeCircle.removeClass("fas")
+                activeCircle.addClass ("far")
+                $(".slider-nav > i:first-of-type").addClass("fas")
+            }
+
+        }, 2000);
+
+    }
+)
